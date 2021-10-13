@@ -1,2 +1,3 @@
 # Portfolio
-Code voor de mijn website voor school.
+Code voor mijn website voor school.
+Momenteel voor het vak User Interfaces.
