@@ -1,11 +1,11 @@
 html{
 	font-family:"Source Sans Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
 	margin: 50px 50px 50px 50px;
-	background-color: #b3dbf2;
+	background-color: #BDE7FF;
 }
 
 h1{
-	color: #f04c25;
+	color: #B03517;
 	font-size: 50px;
 	font-weight: 600;
 	text-align: center;
@@ -14,7 +14,7 @@ h1{
 }
 
 h2{
-	color: #0a95ab;
+	color: #076978;
 	font-size: 18px;
 	font-weight: normal;
 	text-align: center;
