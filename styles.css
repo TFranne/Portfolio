@@ -1,7 +1,13 @@
 html{
 	font-family:"Source Sans Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
-	margin: 50px 50px 50px 50px;
+	margin: 20px 50px 50px 50px;
 	background-color: #BDE7FF;
+}
+
+body{
+	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
@@ -32,23 +38,27 @@ p{
 	padding-bottom: 70px;
 }
 
+figure{
+	margin: 0;
+}
+
 img.links{
 	border-radius: 50%;
-	width: 25%;
+	width: 330px;
 	float: left;
 	margin-right: 20px;
 }
 
 img.rechts{
 	border-radius: 50%;
-	width: 25%;
+	width: 300px;
 	float: right;
 	margin-left: 20px;
 }
 
 ul{
 	list-style-type: none;
-	float: right;
+	text-align: right;
 }
 
 li{
@@ -70,7 +80,8 @@ a.navigatie{
 }
 
 a.navigatie:hover{
-	background-color: #f04c25;
+	background-color: #B03517;
+	color: #BDE7FF;
 }
 
 a.navigatie.active{
@@ -78,5 +89,6 @@ a.navigatie.active{
 }
 
 a.navigatie.active:hover{
-	background-color: #f04c25;
+	background-color: #B03517;
+	color: #BDE7FF;
 }
