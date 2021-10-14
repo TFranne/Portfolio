@@ -48,7 +48,6 @@ img.rechts{
 
 ul{
 	list-style-type: none;
-	overflow: hidden;
 	float: right;
 }
 
@@ -67,9 +66,17 @@ a.navigatie{
   	padding: 10px 20px;
 	margin: 0px;
   	text-align: center;
-	display: inline-block;
+	display: inline;
 }
 
 a.navigatie:hover{
+	background-color: #f04c25;
+}
+
+a.navigatie.active{
+	background-color: #BDE7FF;
+}
+
+a.navigatie.active:hover{
 	background-color: #f04c25;
 }
