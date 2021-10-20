@@ -11,14 +11,25 @@ main{
 
 h1{
 	color: #D04828;
-	font-size: 200px;
+	font-size: 300px;
 	font-weight: 600;
 	text-align: center;
-	margin-top: 30px;
+	padding-top: 250px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	font-family: 'Are You Serious';
-	line-height: 160px;
+	line-height: 250px;
+
+}
+
+.tekeningen{
+	background-image: url(images/achtergrond.png);
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	height: 500px;
+	padding-bottom: 80px;
 }
 
 h2{
@@ -27,7 +38,7 @@ h2{
 	font-weight: 600;
 	text-align: center;
 	font-family: "Gloria Hallelujah";
-	text-indent: 200px;
+	text-indent: 400px;
 	margin-top: 0px;
 	padding-top: 0px;
 	line-height: 26px;
