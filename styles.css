@@ -22,13 +22,19 @@ h1{
 }
 
 h2{
-	color: #076978;
-	font-size: 18px;
-	font-weight: normal;
+	color: #D78635;
+	font-size: 28px;
+	font-weight: 600;
 	text-align: center;
-	text-indent: 100px;
+	font-family: "Gloria Hallelujah";
+	text-indent: 200px;
 	margin-top: 0px;
 	padding-top: 0px;
+	line-height: 26px;
+}
+
+.blokjes{
+	border: 10px solid #D78635;
 }
 
 h3{
