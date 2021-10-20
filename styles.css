@@ -3,20 +3,22 @@ html{
 	background-color: #111634;
 }
 
-body{
+main{
 	width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 h1{
-	color: #B03517;
-	font-size: 100px;
+	color: #D04828;
+	font-size: 200px;
 	font-weight: 600;
 	text-align: center;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	font-family: 'Are You Serious';
+	line-height: 160px;
 }
 
 h2{
@@ -75,8 +77,8 @@ ul{
 	border-style: none none solid none ;
 	border-color: #F5F3F4;
 	padding-bottom: 0px;
-	height: 47px;
-	padding: 0px 50px;
+	height: 35px;
+	padding: 0px 40px 0px 0px;
 	margin-top: 50px;
 }
 
@@ -89,15 +91,16 @@ li{
 
 a.navigatie{
 	text-decoration: none;
-	font-weight: bold;
-	font-size: 30px;
+	font-size: 20px;
+	font-family: "Gloria Hallelujah";
   	color: #F5F3F4;
 	margin: 0px;
+	padding: 2px;
   	text-align: center;
 	display: inline;
 	background-color: #111634;
 }
 
 a.navigatie:hover{
-	color: #B03517;
+	color: #D04828;
 }
