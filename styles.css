@@ -11,15 +11,20 @@ main{
 
 h1{
 	color: #D04828;
-	font-size: 300px;
+	font-size: 200px;
 	font-weight: 400;
 	text-align: center;
-	padding-top: 290px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	font-family: 'Are You Serious';
+
+}
+
+.tekeningen h1{
+	padding-top: 290px;
 	line-height: 250px;
+	font-size: 300px;
 
 }
 
