@@ -46,7 +46,12 @@ h2{
 
 .blokjes{
 	width: 600px;
-	margin: 20px auto;
+	margin: 100px auto 20px auto;
+	padding-top: 0px;
+}
+
+section.blokjes:last-child{
+	margin-bottom: 200px;
 }
 
 h3{
@@ -55,41 +60,66 @@ h3{
 	font-family: "Gloria Hallelujah";
 }
 
-h3.hond{
+.rechts h3{
 	text-align: right;
 }
 
-section{
-	padding-top: 0px;
-	margin-bottom: 20px;
-}
 
 p.uitleg{
 	color: #F5F3F4;
 	font-size: 20px;
-	line-height: 20px;
 	font-weight: 300;
-	text-align: justify;
-	padding-bottom: 60px;
 	margin: 20px;
+}
+
+.rechts p.uitleg{
+	text-align: right;
 }
 
 figure{
 	margin: 0;
 }
 
-img.links{
+img.rond{
 	border-radius: 50%;
-	width: 300px;
-	float: left;
+	width: 295px;
+	height: 295px;
 	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 5px;
 }
 
-img.rechts{
-	border-radius: 50%;
-	width: 300px;
+.links img{
+	float: left;
+}
+
+.rechts img{
 	float: right;
-	margin-left: 20px;
+}
+
+p.knop{
+	text-align: center;
+	
+}
+
+p.knop a{
+	text-decoration: none;
+	font-weight: 600;
+	font-family: "Gloria Hallelujah";
+	color: #F5F3F4;
+	padding: 5px 20px;
+	background-color: #D04828;
+	border-radius: 5px;
+}
+
+p.knop a:hover{
+	background-color: #F5F3F4;
+	color: #111634;
+}
+
+p.knop a:active{
+	background-color: #F5F3F4;
+	color: #D04828;
 }
 
 ul{
