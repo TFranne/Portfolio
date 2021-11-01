@@ -12,7 +12,7 @@ main{
 h1{
 	color: #D04828;
 	font-size: 300px;
-	font-weight: 600;
+	font-weight: 400;
 	text-align: center;
 	padding-top: 290px;
 	margin-top: 0px;
@@ -64,7 +64,7 @@ section{
 	margin-bottom: 20px;
 }
 
-p{
+p.uitleg{
 	color: #F5F3F4;
 	font-size: 20px;
 	line-height: 20px;
@@ -98,14 +98,15 @@ ul{
 	border-style: none none solid none ;
 	border-color: #F5F3F4;
 	padding-bottom: 0px;
-	height: 35px;
+	height: 25px;
 	padding: 0px 40px 0px 0px;
-	margin-top: 50px;
+	margin-top: 0px;
 }
 
 li{
 	float: right;
 	padding: 10px 20px;
+	padding-top: 0px;
 
 }
 
@@ -125,4 +126,21 @@ a.navigatie{
 
 a.navigatie:hover{
 	color: #D04828;
+}
+
+p.logo{
+	display: inline-block;
+	line-height: 20px;
+	padding: 0px;
+	padding-top: 40px;
+	margin: 0px;
+	margin-left: 30px;
+}
+
+p.logo a{
+	text-decoration: none;
+	font-size: 80px;
+	font-family: 'Are You Serious';
+	color: #D04828;
+	padding: 5px;
 }
