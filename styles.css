@@ -7,6 +7,7 @@ main{
 	width: 90%;
     margin-left: auto;
     margin-right: auto;
+	color: #F5F3F4;
 }
 
 h1{
@@ -178,4 +179,48 @@ p.logo a{
 	font-family: 'Are You Serious';
 	color: #D04828;
 	padding: 5px;
+}
+
+.project{
+	margin-right: 20px;
+	float: left;
+	border: 5px solid;
+	border-color: #D78635;
+	border-radius: 10px;
+	width: 400px;
+}
+
+article{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.project a{
+	text-decoration: none;
+	color: #F5F3F4;
+}
+
+.project:hover{
+	border-color: #80BFAD;
+}
+
+article h3{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+article img{
+	width: 90%;
+	padding-bottom: 20px;
+}
+
+article table{
+	display: inline;
+}
+
+article th{
+	font-weight: 400;
+	text-align: left;
+	padding-left: 10px;
 }
