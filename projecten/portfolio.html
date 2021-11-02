@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Mijn Website</title>
+		<link rel="stylesheet" href="../styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <header>
+            <p class="logo"><a href="index.html">Franne</a></p>
+    		<ul>
+	    		<li> <a class="navigatie" href="../contact.html">contact</a></li>
+		    	<li> <a class="navigatie" href="../werkplekleren.html">werkplekleren</a></li>
+			    <li> <a class="navigatie" href="../projecten.html">projecten</a></li>
+    			<li> <a class="navigatie" href="../over-mij.html">over mij</a> </li>
+	    		<li> <a class="navigatie" href="../index.html">home</a> </li>
+		    </ul>
+            <h1>Mijn Website</h1>
+        </header>
+        <main>
+            <section class="blokjes links">
+				<h3>Een eerste versie van mijn portfolio</h3>
+				<p class="uitleg">
+					Tijdens de lessen User Interfaces in het eerste kwartaal leerden we aan de hand van html en css een simpele website bouwen. 
+                    Met behulp van basis design principes leerden we deze er ook een beetje degelijk te laten uitzien. 
+                    De eindopdracht voor dit vak was dan ook om een persoonlijke website te maken met een aantal minimumvereisten. 
+                    De eerste versie van deze website was het resultaat.
+				</p>
+			</section>
+            <section class="fotokeuze">
+                <h3>Fotogallerij</h3>
+                <input type="radio" name="keuze" id="img-1" class="nietzichtbaar" checked>
+                <div class="keuze">
+                    <label for="img-1" class="miniFoto"><img src="../images/portfolio-idee.jpg" alt="Een concept ontwerp van mijn portfolio"></label>
+                    <div class="test">
+                        <img src="../images/portfolio-idee.jpg" alt="Een concept ontwerp van mijn portfolio" class="groot">
+                    </div>
+                </div>
+                <input type="radio" name="keuze" id="img-2" class="nietzichtbaar">
+                <div class="keuze">
+                    <label for="img-2" class="miniFoto"><img src="../images/moodboard.png" alt="inspiratie in een moodboard"></label>
+                    <div class="test">
+                        <img src="../images/moodboard.png" alt="inspiratie in een moodboard" class="groot">
+                    </div>
+                </div>
+                <input type="radio" name="keuze" id="img-3" class="nietzichtbaar">
+                <div class="keuze">
+                    <label for="img-3" class="miniFoto"><img src="../images/wireframe.jpg" alt="getekende inspiratie"></label>
+                    <div class="test">
+                        <img src="../images/wireframe.jpg" alt="getekende inspiratie" class="groot">
+                    </div>
+                </div>
+                <input type="radio" name="keuze" id="img-4" class="nietzichtbaar">
+                <div class="keuze">
+                    <label for="img-4" class="miniFoto"><img src="../images/kleurpallet.jpeg" alt="gekozen kleurpallet"></label>
+                    <div class="test">
+                        <img src="../images/kleurpallet.jpeg" alt="gekozen kleurpallet" class="groot">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
