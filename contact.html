@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Franne - Contact</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<header>
+			<p class="logo"><a href="index.html">Franne</a></p>
+			<ul>
+				<li> <a class="navigatie" href="contact.html">contact</a></li>
+				<li> <a class="navigatie" href="werkplekleren.html">werkplekleren</a></li>
+				<li> <a class="navigatie" href="projecten.html">projecten</a></li>
+				<li> <a class="navigatie" href="over-mij.html">over mij</a> </li>
+				<li> <a class="navigatie" href="index.html">home</a> </li>
+			</ul>
+			<h1>Contact</h1>
+			<h2>pagina in aanbouw</h2>
+		</header>
+
+        <main>
+            <section class="blokjes links">
+				<h3>De eerste contact-pagina</h3>
+				<p class="uitleg">
+					Met onderstaand contact-formulier kan je mij nog niet contacteren. 
+                    Toch al een vraag die niet kan wachten? 
+                    Stuur me dan gerust een email op volgend adres.
+                </p>
+                <p class="uitleg">
+                    <a href="mailto:r0879884@student.thomasmore.be">r0879884@student.thomasmore.be</a>
+                </p>
+			</section>
+            <section>
+                <form action="post-demo.php" method="post">
+                    <fieldset>
+                        <legend>Contact formulier</legend>
+                        <table>
+                            <tr>
+                                <th><label for="naam">Naam</label></th>
+                                <th><input type="text" name="naam" id="naam"></th>
+                            </tr>
+
+                            <tr>
+                                <th><label for="email">e-mailadres</label></th>
+                                <th><input type="email" name="email" id="email"></th>
+                            </tr>
+
+                            <tr>
+                                <th><label for="onderwerp">onderwerp</label></th>
+                                <th>
+                                    <select name="onderwerp" id="onderwerp">
+                                        <option value="">--kies een optie--</option>
+                                        <option value="tips over de site">tips over de site</option>
+                                        <option value="vragen over mij">vragen over mij</option>
+                                        <option value="gewoon zomaar">gewoon zomaar</option>
+                                        <option value="aanvraag samenwerken">aanvraag samenwerken</option>
+                                    </select>
+                                </th>
+                            </tr>
+
+                            <tr class="bericht">
+                                <th><label for="bericht">bericht</label></th>
+                                <th>
+                                    <textarea name="bericht" id="bericht" cols="50" rows="10"></textarea>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th></th>
+                                <th><input type="submit" value="Verzenden" class="knop"></th>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

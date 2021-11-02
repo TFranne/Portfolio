@@ -83,6 +83,11 @@ p.uitleg{
 	margin: 20px;
 }
 
+p.uitleg a{
+	text-decoration: underline;
+	color: #F5F3F4;
+}
+
 .rechts p.uitleg{
 	text-align: right;
 }
@@ -285,3 +290,46 @@ input[type=radio]:checked + .keuze .test img.groot{
 	display: block;
 }
 
+form{
+	width: 560px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+legend{
+	font-family: "Gloria Hallelujah";
+	color:#D78635;
+	font-size: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+fieldset{
+	border-radius: 20px;
+	border-width: 10px;
+	border-color: #80BFAD;
+	border-style: solid;
+}
+
+fieldset table tr th{
+	vertical-align: top;
+	font-weight: 400;
+	text-align: left;
+	padding-left: 10px;
+	font-family: "Gloria Hallelujah";
+}
+
+fieldset table tr.bericht{
+	color:#D78635;
+	font-size: 20px;
+}
+
+input.knop{
+	all: unset;
+	background-color: #80BFAD;
+	color: #111634;
+	font-family: "Gloria Hallelujah";
+	font-weight: 700;
+	padding: 0px 10px;
+	border-radius: 5px;
+}
