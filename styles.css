@@ -88,7 +88,7 @@ p.uitleg a{
 	color: #F5F3F4;
 }
 
-.rechts p.uitleg{
+.rechts p{
 	text-align: right;
 }
 
@@ -111,11 +111,6 @@ img.rond{
 
 .rechts img{
 	float: right;
-}
-
-p.knop{
-	text-align: center;
-	
 }
 
 p.knop a{
