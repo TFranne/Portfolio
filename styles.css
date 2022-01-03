@@ -138,7 +138,7 @@ p.knop a:active{
 
 ul{
 	list-style-type: none;
-	border: 0.17vw;
+	border-width: 0.17vw;
 	border-style: none none solid none ;
 	border-color: #F5F3F4;
 	padding-bottom: 0px;
@@ -332,6 +332,23 @@ input.knop{
 	border-radius: 5px;
 }
 
+.hamburger{
+	display: none;
+}
+
+.hamIcoon{
+	display: none;
+	float: right;
+}
+
+hr{
+	display: none;
+	margin: 12px 0px 12px 0px;
+	border-style: none none solid none ;
+	border-color: #F5F3F4;
+	border-width: 00.7vw;
+}
+
 @media screen and (max-width: 1200px) {
 	a.navigatie{
 		font-size: 2vw;
@@ -353,5 +370,60 @@ input.knop{
 
 	p.logo a{
 		font-size: 5.5vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	header{
+		position: relative;
+	}
+
+	.hamIcoon{
+		display: inline;
+	}
+
+	.icoontje{
+		width: 7vw;
+		max-width: 50px;
+	}
+
+	li{
+		display: block;
+		clear: both;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	ul{
+		border-style: none;
+		display: none;
+		height: 0px;
+		margin: 0px;
+		position: absolute;
+		left:50%;
+	}
+
+	p.logo a{
+		font-size: 7vw;
+	}
+
+	input[type=checkbox]:checked + ul {
+		display: block;
+	}
+
+	a.navigatie{
+		display: block;
+		clear: both;
+		background-color: #D78635;
+		font-size: 28px;
+		line-height: 50px;
+		margin: 0px;
+		padding: 10px;
+		width: 200px;
+	}
+
+	hr{
+		display: block;
 	}
 }
