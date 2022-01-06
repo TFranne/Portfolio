@@ -26,7 +26,7 @@ h1{
 
 .tekeningen h1{
 	padding-top: 14vw;
-	line-height: 18vw;
+	line-height: 15vw;
 	font-size: 20vw;
 
 }
@@ -37,7 +37,7 @@ h1{
 	background-size: 90%;
 	background-repeat: no-repeat;
 	height: auto;
-	padding-bottom: 100px;
+	padding-bottom: 5vw;
 }
 
 h2{
@@ -49,7 +49,7 @@ h2{
 	text-indent: 25vw;
 	margin-top: -30px;
 	padding-top: 0px;
-	line-height: 26px;
+	line-height: 3vw;
 }
 
 .tekeningen h2{
@@ -137,6 +137,8 @@ p.knop a:active{
 }
 
 ul{
+	display: flex;
+	justify-content: flex-end;
 	list-style-type: none;
 	border-width: 0.17vw;
 	border-style: none none solid none ;
@@ -148,7 +150,6 @@ ul{
 }
 
 li{
-	float: right;
 	padding: 10px 20px;
 	padding-top: 0px;
 
@@ -379,6 +380,22 @@ hr{
 		position: relative;
 	}
 
+	.tekeningen{
+		background-image: url(images/achtergrond-smartphone.png);
+		padding-bottom: 90vw;
+		background-size: 100%;
+	}
+
+	.tekeningen h1 {
+		padding-top: 35vw;
+		font-size: 30vw;
+		line-height: 22vw;
+	}
+
+	.tekeningen h2{
+		font-size: 4vw;
+	}
+
 	.hamIcoon{
 		display: inline;
 	}
@@ -400,8 +417,11 @@ hr{
 		display: none;
 		height: 0px;
 		margin: 0px;
+		margin-top: 7vw;
+		padding: 0px;
 		position: absolute;
-		left:50%;
+		top: 0;
+		right: 0;
 	}
 
 	p.logo a{
@@ -416,11 +436,11 @@ hr{
 		display: block;
 		clear: both;
 		background-color: #D78635;
-		font-size: 28px;
-		line-height: 50px;
+		font-size: 4vw;
+		line-height: 5vw;
 		margin: 0px;
 		padding: 10px;
-		width: 200px;
+		width: 30vw;
 	}
 
 	hr{
