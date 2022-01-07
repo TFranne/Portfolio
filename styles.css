@@ -14,7 +14,7 @@ main{
 
 h1{
 	color: #D04828;
-	font-size: 200px;
+	font-size: 15vw;
 	font-weight: 400;
 	text-align: center;
 	margin-top: 0px;
@@ -42,12 +42,12 @@ h1{
 
 h2{
 	color: #D78635;
-	font-size: 40px;
+	font-size: 2vw;
 	font-weight: 600;
 	text-align: center;
 	font-family: "Gloria Hallelujah";
 	text-indent: 25vw;
-	margin-top: -30px;
+	margin-top: -3vw;
 	padding-top: 0px;
 	line-height: 3vw;
 }
@@ -58,9 +58,15 @@ h2{
 }
 
 .blokjes{
-	width: 600px;
+	max-width: 600px;
+	min-height: 350px;
 	margin: 100px auto 20px auto;
 	padding-top: 0px;
+}
+
+.normaal{
+	max-width: 600px;
+	margin: 20px auto 20px auto;
 }
 
 section.blokjes:last-child{
@@ -74,10 +80,17 @@ h3{
 	margin: 20px;
 }
 
+.rechts figure img{
+	float: right;
+}
+
+.links figure img{
+	float: left;
+}
+
 .rechts h3{
 	text-align: right;
 }
-
 
 p.uitleg{
 	color: #F5F3F4;
@@ -95,25 +108,18 @@ p.uitleg a{
 	text-align: right;
 }
 
-figure{
-	margin: 0;
+.blokjes figure{
+	margin: 0px;
 }
 
 img.rond{
-	border-radius: 50%;
-	width: 295px;
-	height: 295px;
-	margin-right: 20px;
-	margin-left: 20px;
-	margin-bottom: 5px;
-}
-
-.links img{
-	float: left;
-}
-
-.rechts img{
-	float: right;
+	margin: 0px 20px 20px 20px;
+	width: 1500%;
+	max-width: 350px;
+	clip-path: circle(50% at 50% 50%);
+	shape-outside: url(images/Ellipse\ 1.png);
+	shape-image-threshold: 0.2;
+	shape-margin: 20px;
 }
 
 p.knop a{
@@ -124,6 +130,10 @@ p.knop a{
 	padding: 5px 20px;
 	background-color: #D04828;
 	border-radius: 5px;
+}
+
+p.mail{
+	text-align: center;
 }
 
 p.knop a:hover{
@@ -190,13 +200,20 @@ p.logo a{
 	padding: 5px;
 }
 
+.projecten{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	gap: 20px;
+	margin-bottom: 100px;
+}
+
 .project{
-	margin-right: 20px;
-	float: left;
 	border: 5px solid;
 	border-color: #D78635;
 	border-radius: 10px;
-	width: 400px;
+	max-width: 400px;
 }
 
 article{
@@ -236,13 +253,25 @@ article th{
 }
 
 .fotokeuze{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: 
+		"title title title title title title" 
+		"photo photo photo photo photo photo"
+		"photo photo photo photo photo photo";
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 560px;
-	padding-bottom: 650px;
-	margin-bottom: 50px;
+	padding-bottom: 20px;
+	margin-bottom: 900px;
 	background-color: #80BFAD;
-	border-radius: 10px;
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+}
+
+.fotokeuze h3{
+	grid-area: title;
 }
 
 .nietzichtbaar{
@@ -250,31 +279,29 @@ article th{
 }
 
 .miniFoto{
+	grid-area: photo;
 	cursor: pointer;
-	float: left;
 	margin: 5px;
 }
 
-.keuze{
-	position: relative;
-}
-
 .test{
-	top: 120px;
-	position: relative;
+	position: absolute;
+	top: 200px;
+	right: 0;
 }
 
 img.groot{
-	position: absolute;
 	display: none;
-	max-height: 500px;
-	max-width: 100%;
+	width: 560px;
 }
 
 .miniFoto img{
 	box-sizing: border-box;
-	max-width: 100px;
-	max-height: 100px;
+	object-fit: cover;
+	width: 15vw;
+	height: 15vw;
+	max-width: 70px;
+	max-height: 70px;
 }
 
 .keuze label>img:hover{
@@ -289,18 +316,13 @@ input[type=radio]:checked + .keuze .test img.groot{
 	display: block;
 }
 
-form{
-	width: 560px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 legend{
 	font-family: "Gloria Hallelujah";
 	color:#D78635;
 	font-size: 30px;
 	padding-left: 5px;
 	padding-right: 5px;
+	margin-left: 10px;
 }
 
 fieldset{
@@ -308,6 +330,11 @@ fieldset{
 	border-width: 10px;
 	border-color: #80BFAD;
 	border-style: solid;
+	width: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	margin-bottom: 100px;
 }
 
 fieldset table tr th{
@@ -316,6 +343,10 @@ fieldset table tr th{
 	text-align: left;
 	padding-left: 10px;
 	font-family: "Gloria Hallelujah";
+}
+
+textarea{
+	width: 430px;
 }
 
 fieldset table tr.bericht{
@@ -398,6 +429,7 @@ hr{
 
 	.hamIcoon{
 		display: inline;
+		margin: 0px;
 	}
 
 	.icoontje{
@@ -445,5 +477,97 @@ hr{
 
 	hr{
 		display: block;
+	}
+
+	.rechts figure img{
+		float: none;
+	}
+	
+	.links figure img{
+		float: none;
+	}
+
+	.blokjes{
+		margin: 100px auto 20px auto;
+	}
+
+	img.rond{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70vw;
+	}
+
+	.rechts h3{
+		text-align: left;
+	}
+
+	.rechts p{
+		text-align: left;
+	}
+
+	h1{
+		font-size: 20vw;
+	}
+
+	p.knop a{
+		margin: 0px;
+	}
+
+	p.uitleg{
+		margin: 0px;
+	}
+
+	.blokjes h3{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	main{
+		width: 100%;
+		margin: 0px;
+	}
+
+	h2{
+		font-size: 5vw;
+	}
+
+	img.groot{
+		width: 95vw;
+		max-width: 560px;
+	}
+
+	.fotokeuze{
+		width: 95vw;
+	}
+
+	fieldset{
+		max-width: 560px;
+		width: 70vw;
+		border-width: 1.2vw;
+	}
+
+	textarea{
+		max-width: 430px;
+		width: 50vw;
+	}
+
+	legend{
+		font-size: 7vw;
+	}
+
+	input[type=text]{
+		max-width: 170px;
+		width: 50vw;
+	}
+
+	input[type=email]{
+		max-width: 170px;
+		width: 50vw;
+	}
+
+	select{
+		max-width: 170px;
+		width: 50vw;
 	}
 }
